@@ -12,6 +12,7 @@ import java.nio.file.Paths;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import osutils.OS;
 
 /**
  *
@@ -27,20 +28,51 @@ public class MainProperties {
     private String diseasePath;
     private String weaponPath;
     private String propertiesPath;
+    private String editorsPath;
+    private String pathSeparator;
     
     private MainProperties() {
         try {
-            Path currentRelativePath = Paths.get("");
-            currentPath = currentRelativePath.toAbsolutePath().toString();
             
-            propertiesPath = currentPath + "/src/model/MainProperties.properties";
+            if (OS.isWindows()) {
+                pathSeparator = "\\";
+            } else if (OS.isUnix()) {
+                pathSeparator = "/";
+            } /*else if (OS.isMac()) {
+
+            } else if (OS.isSolaris()) {
+
+            }*/
+            
+            Path currentRelativePath = Paths.get("");
+            currentPath = currentRelativePath.toAbsolutePath().toString(); //currentRelativePath.toString();
+            
+            String srcFolder = pathSeparator + "src";
+            String propertiesPathExtra = srcFolder + pathSeparator + "model" + pathSeparator + "MainProperties.properties";
+            
+            propertiesPath = currentPath + propertiesPathExtra;
             
             Properties prop = (Properties)fileioutils.FDBFact.getIntance().create(FDBFact.DB_TYPE.DBProperties).read(propertiesPath);
             
-            foodPath = currentPath + "/src" + prop.getProperty("foodfolder");
-            characterPath = currentPath + "/src" + prop.getProperty("characterfolder");
-            diseasePath = currentPath + "/src" + prop.getProperty("diseasefolder");
-            weaponPath = currentPath + "/src" + prop.getProperty("weaponfolder");
+            String foodPropertiesExtra = prop.getProperty("foodfolder");
+            String characterPropertiesExtra = prop.getProperty("characterfolder");
+            String diseasePropertiesExtra = prop.getProperty("diseasefolder");
+            String weaponPropertiesExtra = prop.getProperty("weaponfolder");
+            String editorsPropertiesExtra = prop.getProperty("editorsfolder");
+            
+            if (!"/".equals(pathSeparator)) {
+                foodPropertiesExtra = foodPropertiesExtra.replaceAll("/", pathSeparator);
+                characterPropertiesExtra = characterPropertiesExtra.replaceAll("/", pathSeparator);
+                diseasePropertiesExtra = diseasePropertiesExtra.replaceAll("/", pathSeparator);
+                weaponPropertiesExtra = weaponPropertiesExtra.replaceAll("/", pathSeparator);
+                editorsPropertiesExtra = editorsPropertiesExtra.replaceAll("/", pathSeparator);
+            }
+            
+            foodPath = currentPath + srcFolder + foodPropertiesExtra;
+            characterPath = currentPath + srcFolder + characterPropertiesExtra;
+            diseasePath = currentPath + srcFolder + diseasePropertiesExtra;
+            weaponPath = currentPath + srcFolder + weaponPropertiesExtra;
+            editorsPath = currentPath + srcFolder + editorsPropertiesExtra;
         } catch (IOException ex) {
             Logger.getLogger(MainProperties.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -71,6 +103,18 @@ public class MainProperties {
 
     public String getWeaponPath() {
         return weaponPath;
+    }
+
+    public String getEditorsPath() {
+        return editorsPath;
+    }
+
+    public void setEditorsPath(String editorsPath) {
+        this.editorsPath = editorsPath;
+    }
+    
+    public String getPathSeparator() {
+        return pathSeparator;
     }
     
 }

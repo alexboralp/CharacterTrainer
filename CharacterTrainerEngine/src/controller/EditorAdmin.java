@@ -7,12 +7,11 @@ package controller;
 
 import fileioutils.FDBFact;
 import java.lang.reflect.InvocationTargetException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
+import model.utils.MainProperties;
 import vista.Editor;
 import vista.listeners.EditorOpenListener;
 import vista.listeners.EditorWindowListener;
@@ -39,10 +38,8 @@ public class EditorAdmin implements IAdmin {
         DefaultListModel<String> model = new DefaultListModel<>();
         frmEditor.lstEditors.setModel(model);
         
-        Path currentRelativePath = Paths.get("");
-        String s = currentRelativePath.toAbsolutePath().toString();
-        System.out.println(s+ "\\src\\vista\\editors\\");
-        String[] files = fileioutils.FUtils.getFolderContent(s + "\\src\\vista\\editors\\");
+        //System.out.println(MainProperties.getInstance().getEditorsPath());
+        String[] files = fileioutils.FUtils.getFolderContent(MainProperties.getInstance().getEditorsPath());
         for (String file : files) {
             if (file.contains(".java")) {
                 model.addElement(file.substring(0, file.length() - 5));
