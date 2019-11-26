@@ -35,11 +35,7 @@ public class MainProperties {
     private String characterImagesPath;
     private String diseaseImagesPath;
     private String weaponImagesPath;
-    private String imagesResourcePath;
-    private String foodImagesResourcePath;
-    private String characterImagesResourcePath;
-    private String diseaseImagesResourcePath;
-    private String weaponImagesResourcePath;
+    private String sourceFolderPath;
     
     private MainProperties() {
         try {
@@ -57,8 +53,8 @@ public class MainProperties {
             Path currentRelativePath = Paths.get("");
             currentPath = currentRelativePath.toAbsolutePath().toString(); //currentRelativePath.toString();
             
-            String srcFolder = pathSeparator + "src";
-            String propertiesPathExtra = srcFolder + pathSeparator + "model" + pathSeparator + "MainProperties.properties";
+            sourceFolderPath = pathSeparator + "src";
+            String propertiesPathExtra = sourceFolderPath + pathSeparator + "model" + pathSeparator + "MainProperties.properties";
             
             propertiesPath = currentPath + propertiesPathExtra;
             
@@ -77,13 +73,6 @@ public class MainProperties {
             diseaseImagesPath = prop.getProperty("diseaseimagesfolder");
             weaponImagesPath = prop.getProperty("weaponimagesfolder");
             
-            imagesResourcePath = prop.getProperty("imagesresourcefolder");
-            
-            foodImagesResourcePath = prop.getProperty("foodimagesresourcefolder");
-            characterImagesResourcePath = prop.getProperty("characterimagesresourcefolder");
-            diseaseImagesResourcePath = prop.getProperty("diseaseimagesresourcefolder");
-            weaponImagesResourcePath = prop.getProperty("weaponimagesresourcefolder");
-            
             if (!"/".equals(pathSeparator)) {
                 foodPropertiesExtra = foodPropertiesExtra.replaceAll("/", pathSeparator);
                 characterPropertiesExtra = characterPropertiesExtra.replaceAll("/", pathSeparator);
@@ -92,11 +81,11 @@ public class MainProperties {
                 editorsPropertiesExtra = editorsPropertiesExtra.replaceAll("/", pathSeparator);
             }
             
-            foodPath = currentPath + srcFolder + foodPropertiesExtra;
-            characterPath = currentPath + srcFolder + characterPropertiesExtra;
-            diseasePath = currentPath + srcFolder + diseasePropertiesExtra;
-            weaponPath = currentPath + srcFolder + weaponPropertiesExtra;
-            editorsPath = currentPath + srcFolder + editorsPropertiesExtra;
+            foodPath = currentPath + sourceFolderPath + foodPropertiesExtra;
+            characterPath = currentPath + sourceFolderPath + characterPropertiesExtra;
+            diseasePath = currentPath + sourceFolderPath + diseasePropertiesExtra;
+            weaponPath = currentPath + sourceFolderPath + weaponPropertiesExtra;
+            editorsPath = currentPath + sourceFolderPath + editorsPropertiesExtra;
         } catch (IOException ex) {
             Logger.getLogger(MainProperties.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -157,28 +146,12 @@ public class MainProperties {
         return weaponImagesPath;
     }
 
-    public String getFoodImagesResourcePath() {
-        return foodImagesResourcePath;
-    }
-
-    public String getCharacterImagesResourcePath() {
-        return characterImagesResourcePath;
-    }
-
-    public String getDiseaseImagesResourcePath() {
-        return diseaseImagesResourcePath;
-    }
-
-    public String getWeaponImagesResourcePath() {
-        return weaponImagesResourcePath;
-    }
-
     public String getImagesPath() {
         return imagesPath;
     }
 
-    public String getImagesResourcePath() {
-        return imagesResourcePath;
+    public String getSourceFolderPath() {
+        return sourceFolderPath;
     }
     
     

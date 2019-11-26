@@ -44,5 +44,96 @@
         "value": 5
       }
     ]
+  },
+  {
+    "name": "Diabetes",
+    "duration": 8,
+    "conditions": [
+      {
+        "attribute": "fatness",
+        "condition": 1,
+        "value": 40
+      }
+    ],
+    "cures": [
+      "Insulina"
+    ],
+    "effects": [
+      {
+        "actionName": "mover",
+        "attribute": "speed",
+        "condition": 1,
+        "regularity": 2,
+        "value": 2
+      }
+    ]
+  },
+  {
+    "name": "Bronquitis",
+    "duration": 3,
+    "conditions": [
+      {
+        "attribute": "physicalHealth",
+        "condition": -1,
+        "value": 30
+      }
+    ],
+    "cures": [
+      "Broncolito"
+    ],
+    "effects": [
+      {
+        "actionName": "mover",
+        "attribute": "life",
+        "condition": 1,
+        "regularity": 2,
+        "value": 1
+      },
+      {
+        "actionName": "mover",
+        "attribute": "mentalHealth",
+        "condition": 1,
+        "regularity": 2,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "name": "Estreñimiento",
+    "duration": 5,
+    "conditions": [
+      {
+        "attribute": "stoolLevel",
+        "condition": 1,
+        "value": 100
+      }
+    ],
+    "cures": [
+      "Fibra",
+      "defecate"
+    ],
+    "effects": [
+      {
+        "actionName": "mover",
+        "attribute": "stoolLevel",
+        "condition": 0,
+        "regularity": 2,
+        "value": 2
+      },
+      {
+        "actionName": "mover",
+        "attribute": "physicalHealth",
+        "condition": 1,
+        "regularity": 2,
+        "value": 2
+      },
+      {
+        "actionName": "mover",
+        "attribute": "mentalHealth",
+        "condition": 1,
+        "regularity": 2,
+        "value": 1
+      }
+    ]
   }
 ]

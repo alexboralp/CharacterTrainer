@@ -14,31 +14,37 @@
         "name": "kamehameha",
         "description": "",
         "level": 2,
-        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/KameHameHa2.gif"
+        "path": "/vista/images/weapon/GokuKameHameHa2.gif"
       },
       "kamehameha3": {
         "name": "kamehameha",
         "description": "",
         "level": 3,
-        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/KameHameHa3.gif"
+        "path": "/vista/images/weapon/GokuKameHameHa3.gif"
       },
       "kamehameha1": {
         "name": "kamehameha",
         "description": "",
         "level": 1,
-        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/KameHameHa.gif"
+        "path": "/vista/images/weapon/GokuKameHameHa1.gif"
+      },
+      "kamehameha6": {
+        "name": "kamehameha",
+        "description": "",
+        "level": 6,
+        "path": "/vista/images/weapon/GokuKameHameHa6.gif"
       },
       "kamehameha4": {
         "name": "kamehameha",
         "description": "",
         "level": 4,
-        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/KameHameHa4.gif"
+        "path": "/vista/images/weapon/GokuKameHameHa4.gif"
       },
       "kamehameha5": {
         "name": "kamehameha",
         "description": "",
         "level": 5,
-        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/KameHameHa5.gif"
+        "path": "/vista/images/weapon/GokuKameHameHa5.gif"
       }
     }
   },
@@ -57,31 +63,31 @@
         "name": "henkidama",
         "description": "",
         "level": 5,
-        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/Henkidama5.gif"
+        "path": "/vista/images/weapon/GokuHenkidama5.gif"
       },
       "henkidama4": {
         "name": "henkidama",
         "description": "",
         "level": 4,
-        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/Henkidama4.gif"
+        "path": "/vista/images/weapon/GokuHenkidama4.gif"
       },
       "henkidama1": {
         "name": "henkidama",
         "description": "",
         "level": 1,
-        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/Henkidama1.gif"
+        "path": "/vista/images/weapon/GokuHenkidama1.gif"
       },
       "henkidama3": {
         "name": "henkidama",
         "description": "",
         "level": 3,
-        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/Henkidama3.gif"
+        "path": "/vista/images/weapon/GokuHenkidama3.gif"
       },
       "henkidama2": {
         "name": "henkidama",
         "description": "",
         "level": 2,
-        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/Henkidama2.gif"
+        "path": "/vista/images/weapon/GokuHenkidama2.gif"
       }
     }
   }

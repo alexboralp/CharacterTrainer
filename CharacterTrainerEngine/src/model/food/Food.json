@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "name": "Melon",
+    "path": "/vista/images/food/watermelon.gif",
+    "fullnesLevel": 10,
+    "liquidsLevel": 30
+  },
+  {
+    "name": "Piña",
+    "path": "/vista/images/food/pineapple.gif",
+    "fullnesLevel": 15,
+    "liquidsLevel": 25
+  },
+  {
+    "name": "Lechuga",
+    "path": "/vista/images/food/lettuce.gif",
+    "fullnesLevel": 10,
+    "liquidsLevel": 15
+  },
+  {
+    "name": "Uvas",
+    "path": "/vista/images/food/grapes.gif",
+    "fullnesLevel": 15,
+    "liquidsLevel": 20
+  },
+  {
+    "name": "Zanahoria",
+    "path": "/vista/images/food/carrot.gif",
+    "fullnesLevel": 20,
+    "liquidsLevel": 10
+  },
+  {
+    "name": "Antidepresivos",
+    "path": "/vista/images/food/pills.gif",
+    "fullnesLevel": 0,
+    "liquidsLevel": 0
+  },
+  {
+    "name": "Peptobismol",
+    "path": "/vista/images/food/jarabe.gif",
+    "fullnesLevel": 0,
+    "liquidsLevel": 5
+  },
+  {
+    "name": "Broncolito",
+    "path": "/vista/images/food/jarabe.gif",
+    "fullnesLevel": 1,
+    "liquidsLevel": 5
+  },
+  {
+    "name": "Fibra",
+    "path": "/vista/images/food/pills.gif",
+    "fullnesLevel": 10,
+    "liquidsLevel": 0
+  },
+  {
+    "name": "Remolacha",
+    "path": "/vista/images/food/beet.gif",
+    "fullnesLevel": 25,
+    "liquidsLevel": 10
+  }
+]

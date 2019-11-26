@@ -18,6 +18,7 @@ import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import model.food.Food;
+import model.food.FoodFact;
 import model.food.FoodList;
 import model.food.interfaces.IFood;
 import model.utils.MainProperties;
@@ -137,22 +138,30 @@ public class FoodEditorAdmin implements IAdmin {
     }
     
     public void nextFood() {
-        actualFood++;
-        if (actualFood < foodList.size()) {
-            GUIShowFood(foodList.get(actualFood));
+        if (foodList.size() > 0) {
+            actualFood++;
+            if (actualFood < foodList.size()) {
+                GUIShowFood(foodList.get(actualFood));
+            } else {
+                actualFood = foodList.size() - 1;
+                GUIShowFood(foodList.get(actualFood));
+            }
         } else {
-            actualFood = foodList.size() - 1;
-            GUIShowFood(foodList.get(actualFood));
+            GUIShowFood(FoodFact.NULL_FOOD);
         }
     }
     
     public void previousFood() {
-        actualFood--;
-        if (actualFood >= 0) {
-            GUIShowFood(foodList.get(actualFood));
+        if (foodList.size() > 0) {
+            actualFood--;
+            if (actualFood >= 0) {
+                GUIShowFood(foodList.get(actualFood));
+            } else {
+                actualFood = 0;
+                GUIShowFood(foodList.get(actualFood));
+            }
         } else {
-            actualFood = 0;
-            GUIShowFood(foodList.get(actualFood));
+            GUIShowFood(FoodFact.NULL_FOOD);
         }
     }
     
