@@ -30,6 +30,16 @@ public class MainProperties {
     private String propertiesPath;
     private String editorsPath;
     private String pathSeparator;
+    private String imagesPath;
+    private String foodImagesPath;
+    private String characterImagesPath;
+    private String diseaseImagesPath;
+    private String weaponImagesPath;
+    private String imagesResourcePath;
+    private String foodImagesResourcePath;
+    private String characterImagesResourcePath;
+    private String diseaseImagesResourcePath;
+    private String weaponImagesResourcePath;
     
     private MainProperties() {
         try {
@@ -59,6 +69,20 @@ public class MainProperties {
             String diseasePropertiesExtra = prop.getProperty("diseasefolder");
             String weaponPropertiesExtra = prop.getProperty("weaponfolder");
             String editorsPropertiesExtra = prop.getProperty("editorsfolder");
+            
+            foodImagesPath = prop.getProperty("imagesfolder");
+            
+            foodImagesPath = prop.getProperty("foodimagesfolder");
+            characterImagesPath = prop.getProperty("characterimagesfolder");
+            diseaseImagesPath = prop.getProperty("diseaseimagesfolder");
+            weaponImagesPath = prop.getProperty("weaponimagesfolder");
+            
+            imagesResourcePath = prop.getProperty("imagesresourcefolder");
+            
+            foodImagesResourcePath = prop.getProperty("foodimagesresourcefolder");
+            characterImagesResourcePath = prop.getProperty("characterimagesresourcefolder");
+            diseaseImagesResourcePath = prop.getProperty("diseaseimagesresourcefolder");
+            weaponImagesResourcePath = prop.getProperty("weaponimagesresourcefolder");
             
             if (!"/".equals(pathSeparator)) {
                 foodPropertiesExtra = foodPropertiesExtra.replaceAll("/", pathSeparator);
@@ -116,5 +140,47 @@ public class MainProperties {
     public String getPathSeparator() {
         return pathSeparator;
     }
+
+    public String getFoodImagesPath() {
+        return foodImagesPath;
+    }
+
+    public String getCharacterImagesPath() {
+        return characterImagesPath;
+    }
+
+    public String getDiseaseImagesPath() {
+        return diseaseImagesPath;
+    }
+
+    public String getWeaponImagesPath() {
+        return weaponImagesPath;
+    }
+
+    public String getFoodImagesResourcePath() {
+        return foodImagesResourcePath;
+    }
+
+    public String getCharacterImagesResourcePath() {
+        return characterImagesResourcePath;
+    }
+
+    public String getDiseaseImagesResourcePath() {
+        return diseaseImagesResourcePath;
+    }
+
+    public String getWeaponImagesResourcePath() {
+        return weaponImagesResourcePath;
+    }
+
+    public String getImagesPath() {
+        return imagesPath;
+    }
+
+    public String getImagesResourcePath() {
+        return imagesResourcePath;
+    }
+    
+    
     
 }

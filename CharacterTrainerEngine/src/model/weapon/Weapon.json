@@ -1,0 +1,88 @@
+[
+  {
+    "name": "kamehameha",
+    "reachDistance": 0,
+    "damage": 25,
+    "level": 0,
+    "range": 0,
+    "cost": 0,
+    "speed": 0,
+    "maxLevel": 0,
+    "availableLevel": 0,
+    "images": {
+      "kamehameha2": {
+        "name": "kamehameha",
+        "description": "",
+        "level": 2,
+        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/KameHameHa2.gif"
+      },
+      "kamehameha3": {
+        "name": "kamehameha",
+        "description": "",
+        "level": 3,
+        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/KameHameHa3.gif"
+      },
+      "kamehameha1": {
+        "name": "kamehameha",
+        "description": "",
+        "level": 1,
+        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/KameHameHa.gif"
+      },
+      "kamehameha4": {
+        "name": "kamehameha",
+        "description": "",
+        "level": 4,
+        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/KameHameHa4.gif"
+      },
+      "kamehameha5": {
+        "name": "kamehameha",
+        "description": "",
+        "level": 5,
+        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/KameHameHa5.gif"
+      }
+    }
+  },
+  {
+    "name": "henkidama",
+    "reachDistance": 0,
+    "damage": 20,
+    "level": 0,
+    "range": 0,
+    "cost": 0,
+    "speed": 0,
+    "maxLevel": 0,
+    "availableLevel": 0,
+    "images": {
+      "henkidama5": {
+        "name": "henkidama",
+        "description": "",
+        "level": 5,
+        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/Henkidama5.gif"
+      },
+      "henkidama4": {
+        "name": "henkidama",
+        "description": "",
+        "level": 4,
+        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/Henkidama4.gif"
+      },
+      "henkidama1": {
+        "name": "henkidama",
+        "description": "",
+        "level": 1,
+        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/Henkidama1.gif"
+      },
+      "henkidama3": {
+        "name": "henkidama",
+        "description": "",
+        "level": 3,
+        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/Henkidama3.gif"
+      },
+      "henkidama2": {
+        "name": "henkidama",
+        "description": "",
+        "level": 2,
+        "path": "/home/alexander/Dropbox/Tecnologico/IngenieriaEnComputacion/2019II/DisennoSoftware/ProyectoFinal/images/Goku/Henkidama2.gif"
+      }
+    }
+  }
+]

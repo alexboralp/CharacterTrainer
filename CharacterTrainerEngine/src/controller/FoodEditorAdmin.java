@@ -212,9 +212,7 @@ public class FoodEditorAdmin implements IAdmin {
                 list.forEach(x -> {
                     foodList.add(x);
                     ImageIconManager.getInstance().addImage(x.getPath());
-                        });
-
-                foodList.forEach(x -> System.out.println(x.toString()));
+                });
             }
             
         } catch (IOException ex) {

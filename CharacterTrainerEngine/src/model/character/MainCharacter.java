@@ -69,8 +69,6 @@ public class MainCharacter extends Character implements IMainCharacter {
     public void setLiquidsLevel(int liquidsLevel) {
         this.liquidsLevel = liquidsLevel;
     }
-    
-    
 
     public int getSleepLevel() {
         return sleepLevel;

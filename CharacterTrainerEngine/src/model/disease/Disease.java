@@ -5,7 +5,6 @@
  */
 package model.disease;
 
-import cc.interfaces.common.INameable;
 import java.util.LinkedList;
 import model.disease.interfaces.ICondition;
 import model.disease.interfaces.IDisease;
@@ -20,7 +19,7 @@ public class Disease implements IDisease {
     private String name;
     private int duration;
     private final LinkedList<ICondition> conditions;
-    private final LinkedList<INameable> cures;
+    private final LinkedList<String> cures;
     private final LinkedList<IEffect> effects;
 
     public Disease(String name, int duration) {
@@ -31,7 +30,7 @@ public class Disease implements IDisease {
         effects = new LinkedList();
     }
 
-    public Disease(String name, int duration, LinkedList<ICondition> conditions, LinkedList<INameable> cures, LinkedList<IEffect> effects) {
+    public Disease(String name, int duration, LinkedList<ICondition> conditions, LinkedList<String> cures, LinkedList<IEffect> effects) {
         this.name = name;
         this.duration = duration;
         this.conditions = conditions;
@@ -55,12 +54,12 @@ public class Disease implements IDisease {
     }
 
     @Override
-    public LinkedList<INameable> getCures() {
+    public LinkedList<String> getCures() {
         return cures;
     }
 
     @Override
-    public void addCure(INameable cure) {
+    public void addCure(String cure) {
         cures.add(cure);
     }
 

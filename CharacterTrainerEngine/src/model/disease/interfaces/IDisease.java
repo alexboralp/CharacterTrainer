@@ -14,8 +14,8 @@ import java.util.LinkedList;
  */
 public interface IDisease extends INameable {
     
-    public LinkedList<INameable> getCures();
-    public void addCure(INameable cure);
+    public LinkedList<String> getCures();
+    public void addCure(String cure);
     public int getDuration();
     public void setDuration(int duration);
     public LinkedList<ICondition> getConditions();

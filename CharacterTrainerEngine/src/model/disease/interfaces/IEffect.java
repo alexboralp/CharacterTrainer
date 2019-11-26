@@ -13,6 +13,7 @@ public interface IEffect {
     // Conditions
     public static int PLUS = 0;
     public static int MINUS = 1;
+    public static int CHANGE = 2;
     
     // REGULARITY
     public static int ONCE = 0;

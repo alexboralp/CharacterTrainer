@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Diarrea",
+    "duration": 5,
+    "conditions": [
+      {
+        "attribute": "fullnesLevel",
+        "condition": 2,
+        "value": 100
+      }
+    ],
+    "cures": [
+      "Peptobismol"
+    ],
+    "effects": [
+      {
+        "actionName": "Mover",
+        "attribute": "speed",
+        "condition": 0,
+        "regularity": 2,
+        "value": 5
+      }
+    ]
+  },
+  {
+    "name": "Depresión",
+    "duration": 10,
+    "conditions": [
+      {
+        "attribute": "happiness",
+        "condition": -2,
+        "value": 30
+      }
+    ],
+    "cures": [
+      "Antidepresivos"
+    ],
+    "effects": [
+      {
+        "actionName": "Mover",
+        "attribute": "speed",
+        "condition": 1,
+        "regularity": 2,
+        "value": 5
+      }
+    ]
+  }
+]

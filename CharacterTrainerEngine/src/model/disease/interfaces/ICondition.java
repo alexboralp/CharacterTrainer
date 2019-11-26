@@ -10,8 +10,11 @@ package model.disease.interfaces;
  * @author alexander
  */
 public interface ICondition {
-    public static int LESS_AND_EQUAL = 0;
+    public static int LESS = -2;
+    public static int LESS_AND_EQUAL = -1;
+    public static int EQUAL = 0;
     public static int GREATER_AND_EQUAL = 1;
+    public static int GREATER = 2;
     
     public String getAttribute();
     public void setAttribute(String attribute);

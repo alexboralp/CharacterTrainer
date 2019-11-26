@@ -5,7 +5,6 @@
  */
 package model.disease;
 
-import cc.interfaces.common.INameable;
 import cc.interfaces.patterns.IBuilder;
 import java.util.LinkedList;
 import model.disease.interfaces.ICondition;
@@ -21,8 +20,14 @@ public class DiseaseBuilder implements IBuilder<IDisease> {
     private String name;
     private int duration;
     private final LinkedList<ICondition> conditions;
-    private final LinkedList<INameable> cures;
+    private final LinkedList<String> cures;
     private final LinkedList<IEffect> effects;
+
+    public DiseaseBuilder() {
+        this.conditions = new LinkedList();
+        this.cures = new LinkedList();
+        this.effects = new LinkedList();
+    }
 
     public DiseaseBuilder(String name, int duration) {
         this.name = name;
@@ -47,7 +52,7 @@ public class DiseaseBuilder implements IBuilder<IDisease> {
         return this;
     }
     
-    public DiseaseBuilder addCure(INameable cure) {
+    public DiseaseBuilder addCure(String cure) {
         cures.add(cure);
         return this;
     }

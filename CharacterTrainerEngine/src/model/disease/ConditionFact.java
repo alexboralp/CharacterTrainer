@@ -12,6 +12,8 @@ import model.disease.interfaces.ICondition;
  * @author alexander
  */
 public class ConditionFact {
+    public static ICondition NULL_CONDITION = ConditionFact.create("", 0, 50);
+    
     public static ICondition create(String attribute, int condition, int value) {
         return new Condition(attribute, condition, value);
     }
