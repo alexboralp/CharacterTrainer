@@ -29,6 +29,54 @@ public class MainFrame extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         lblHouse = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        prbLife = new javax.swing.JProgressBar();
+        jLabel6 = new javax.swing.JLabel();
+        prbFullnes = new javax.swing.JProgressBar();
+        jLabel7 = new javax.swing.JLabel();
+        prbLiquids = new javax.swing.JProgressBar();
+        jLabel9 = new javax.swing.JLabel();
+        prbHappiness = new javax.swing.JProgressBar();
+        jLabel8 = new javax.swing.JLabel();
+        pgbPhysicalHealth = new javax.swing.JProgressBar();
+        jLabel10 = new javax.swing.JLabel();
+        prbMentalHealth = new javax.swing.JProgressBar();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        prbForce = new javax.swing.JProgressBar();
+        jlabel12 = new javax.swing.JLabel();
+        prbSleepLevel = new javax.swing.JProgressBar();
+        jLabel12 = new javax.swing.JLabel();
+        prbTrainingLevel = new javax.swing.JProgressBar();
+        jPanel11 = new javax.swing.JPanel();
+        jLabel14 = new javax.swing.JLabel();
+        jProgressBar1 = new javax.swing.JProgressBar();
+        jLabel15 = new javax.swing.JLabel();
+        jProgressBar2 = new javax.swing.JProgressBar();
+        jLabel16 = new javax.swing.JLabel();
+        jProgressBar3 = new javax.swing.JProgressBar();
+        jPanel12 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        lblMood = new javax.swing.JLabel();
+        jPanel13 = new javax.swing.JPanel();
+        lblFriend = new javax.swing.JLabel();
+        lblEnemy = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        lblYear = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        lblDays = new javax.swing.JLabel();
+        jPanel8 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jPanel9 = new javax.swing.JPanel();
+        lblHour = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        lblSeconds = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -37,12 +85,247 @@ public class MainFrame extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
+        jPanel2.setLayout(new java.awt.GridLayout(5, 1, 0, 2));
+
+        jPanel3.setLayout(new java.awt.GridLayout(6, 2));
+
+        jLabel5.setText("Vida:");
+        jPanel3.add(jLabel5);
+
+        prbLife.setValue(100);
+        prbLife.setMaximumSize(new java.awt.Dimension(14, 4));
+        prbLife.setMinimumSize(new java.awt.Dimension(14, 4));
+        prbLife.setPreferredSize(new java.awt.Dimension(14, 4));
+        prbLife.setStringPainted(true);
+        jPanel3.add(prbLife);
+
+        jLabel6.setText("Comida:");
+        jPanel3.add(jLabel6);
+
+        prbFullnes.setValue(100);
+        prbFullnes.setMaximumSize(new java.awt.Dimension(14, 4));
+        prbFullnes.setMinimumSize(new java.awt.Dimension(14, 4));
+        prbFullnes.setPreferredSize(new java.awt.Dimension(14, 4));
+        prbFullnes.setStringPainted(true);
+        jPanel3.add(prbFullnes);
+
+        jLabel7.setText("Líquidos:");
+        jPanel3.add(jLabel7);
+
+        prbLiquids.setValue(100);
+        prbLiquids.setMaximumSize(new java.awt.Dimension(14, 4));
+        prbLiquids.setMinimumSize(new java.awt.Dimension(14, 4));
+        prbLiquids.setPreferredSize(new java.awt.Dimension(14, 4));
+        prbLiquids.setStringPainted(true);
+        jPanel3.add(prbLiquids);
+
+        jLabel9.setText("Felicidad:");
+        jPanel3.add(jLabel9);
+
+        prbHappiness.setValue(100);
+        prbHappiness.setMaximumSize(new java.awt.Dimension(14, 4));
+        prbHappiness.setMinimumSize(new java.awt.Dimension(14, 4));
+        prbHappiness.setPreferredSize(new java.awt.Dimension(14, 4));
+        prbHappiness.setStringPainted(true);
+        jPanel3.add(prbHappiness);
+
+        jLabel8.setText("Salud física:");
+        jPanel3.add(jLabel8);
+
+        pgbPhysicalHealth.setValue(100);
+        pgbPhysicalHealth.setMaximumSize(new java.awt.Dimension(14, 4));
+        pgbPhysicalHealth.setMinimumSize(new java.awt.Dimension(14, 4));
+        pgbPhysicalHealth.setPreferredSize(new java.awt.Dimension(14, 4));
+        pgbPhysicalHealth.setStringPainted(true);
+        jPanel3.add(pgbPhysicalHealth);
+
+        jLabel10.setText("Salud mental:");
+        jPanel3.add(jLabel10);
+
+        prbMentalHealth.setValue(100);
+        prbMentalHealth.setMaximumSize(new java.awt.Dimension(14, 4));
+        prbMentalHealth.setMinimumSize(new java.awt.Dimension(14, 4));
+        prbMentalHealth.setPreferredSize(new java.awt.Dimension(14, 4));
+        prbMentalHealth.setStringPainted(true);
+        jPanel3.add(prbMentalHealth);
+
+        jPanel2.add(jPanel3);
+
+        jPanel10.setLayout(new java.awt.GridLayout(3, 2));
+
+        jLabel11.setText("Fuerza:");
+        jPanel10.add(jLabel11);
+
+        prbForce.setMaximumSize(new java.awt.Dimension(14, 4));
+        prbForce.setMinimumSize(new java.awt.Dimension(14, 4));
+        prbForce.setPreferredSize(new java.awt.Dimension(14, 4));
+        prbForce.setStringPainted(true);
+        jPanel10.add(prbForce);
+
+        jlabel12.setText("Sueño:");
+        jPanel10.add(jlabel12);
+
+        prbSleepLevel.setMaximumSize(new java.awt.Dimension(14, 4));
+        prbSleepLevel.setMinimumSize(new java.awt.Dimension(14, 4));
+        prbSleepLevel.setPreferredSize(new java.awt.Dimension(14, 4));
+        prbSleepLevel.setStringPainted(true);
+        jPanel10.add(prbSleepLevel);
+
+        jLabel12.setText("Entrenamiento:");
+        jPanel10.add(jLabel12);
+
+        prbTrainingLevel.setMaximumSize(new java.awt.Dimension(14, 4));
+        prbTrainingLevel.setMinimumSize(new java.awt.Dimension(14, 4));
+        prbTrainingLevel.setPreferredSize(new java.awt.Dimension(14, 4));
+        prbTrainingLevel.setStringPainted(true);
+        jPanel10.add(prbTrainingLevel);
+
+        jPanel2.add(jPanel10);
+
+        jPanel11.setLayout(new java.awt.GridLayout(3, 2));
+
+        jLabel14.setText("Gordura:");
+        jPanel11.add(jLabel14);
+
+        jProgressBar1.setMaximumSize(new java.awt.Dimension(14, 4));
+        jProgressBar1.setMinimumSize(new java.awt.Dimension(14, 4));
+        jProgressBar1.setPreferredSize(new java.awt.Dimension(14, 4));
+        jProgressBar1.setStringPainted(true);
+        jPanel11.add(jProgressBar1);
+
+        jLabel15.setText("Defecar:");
+        jPanel11.add(jLabel15);
+
+        jProgressBar2.setMaximumSize(new java.awt.Dimension(14, 4));
+        jProgressBar2.setMinimumSize(new java.awt.Dimension(14, 4));
+        jProgressBar2.setPreferredSize(new java.awt.Dimension(14, 4));
+        jProgressBar2.setStringPainted(true);
+        jPanel11.add(jProgressBar2);
+
+        jLabel16.setText("Orinar:");
+        jPanel11.add(jLabel16);
+
+        jProgressBar3.setMaximumSize(new java.awt.Dimension(14, 4));
+        jProgressBar3.setMinimumSize(new java.awt.Dimension(14, 4));
+        jProgressBar3.setPreferredSize(new java.awt.Dimension(14, 4));
+        jProgressBar3.setStringPainted(true);
+        jPanel11.add(jProgressBar3);
+
+        jPanel2.add(jPanel11);
+
+        jPanel12.setLayout(new java.awt.GridLayout(1, 2));
+
+        jLabel13.setText("Estado:");
+        jPanel12.add(jLabel13);
+        jPanel12.add(lblMood);
+
+        jPanel2.add(jPanel12);
+
+        jPanel13.setLayout(new java.awt.GridLayout(1, 2));
+        jPanel13.add(lblFriend);
+        jPanel13.add(lblEnemy);
+
+        jPanel2.add(jPanel13);
+
+        getContentPane().add(jPanel2, java.awt.BorderLayout.EAST);
+
+        jPanel5.setLayout(new java.awt.GridLayout(1, 3));
+
+        jPanel6.setLayout(new java.awt.GridLayout(1, 2));
+
+        jLabel1.setText("Años:");
+        jPanel6.add(jLabel1);
+        jPanel6.add(lblYear);
+
+        jPanel5.add(jPanel6);
+
+        jPanel7.setLayout(new java.awt.GridLayout(1, 2));
+
+        jLabel2.setText("Días:");
+        jPanel7.add(jLabel2);
+        jPanel7.add(lblDays);
+
+        jPanel5.add(jPanel7);
+
+        jPanel8.setLayout(new java.awt.GridLayout(1, 2));
+
+        jLabel3.setText("Hora:");
+        jPanel8.add(jLabel3);
+
+        jPanel9.setLayout(new java.awt.GridLayout(1, 3));
+
+        lblHour.setText("00");
+        jPanel9.add(lblHour);
+
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText(":");
+        jPanel9.add(jLabel4);
+
+        lblSeconds.setText("00");
+        jPanel9.add(lblSeconds);
+
+        jPanel8.add(jPanel9);
+
+        jPanel5.add(jPanel8);
+
+        jPanel4.add(jPanel5);
+
+        getContentPane().add(jPanel4, java.awt.BorderLayout.NORTH);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
+    private javax.swing.JProgressBar jProgressBar1;
+    private javax.swing.JProgressBar jProgressBar2;
+    private javax.swing.JProgressBar jProgressBar3;
+    private javax.swing.JLabel jlabel12;
+    public javax.swing.JLabel lblDays;
+    public javax.swing.JLabel lblEnemy;
+    public javax.swing.JLabel lblFriend;
+    public javax.swing.JLabel lblHour;
     public javax.swing.JLabel lblHouse;
+    private javax.swing.JLabel lblMood;
+    public javax.swing.JLabel lblSeconds;
+    public javax.swing.JLabel lblYear;
+    public javax.swing.JProgressBar pgbPhysicalHealth;
+    public javax.swing.JProgressBar prbForce;
+    public javax.swing.JProgressBar prbFullnes;
+    public javax.swing.JProgressBar prbHappiness;
+    public javax.swing.JProgressBar prbLife;
+    public javax.swing.JProgressBar prbLiquids;
+    public javax.swing.JProgressBar prbMentalHealth;
+    public javax.swing.JProgressBar prbSleepLevel;
+    public javax.swing.JProgressBar prbTrainingLevel;
     // End of variables declaration//GEN-END:variables
 }

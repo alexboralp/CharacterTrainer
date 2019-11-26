@@ -7,6 +7,7 @@ package controller;
 
 import java.awt.GraphicsEnvironment;
 import javax.swing.ImageIcon;
+import model.character.MainCharacter;
 import model.io.ResourceImage;
 import vista.MainFrame;
 
@@ -15,7 +16,7 @@ import vista.MainFrame;
  * @author alexander
  */
 public class CharacterTrainerAdmin {
-    private MainFrame frame;
+    private final MainFrame frame;
 
     public CharacterTrainerAdmin(MainFrame frame) {
         this.frame = frame;
@@ -25,8 +26,11 @@ public class CharacterTrainerAdmin {
         GraphicsEnvironment env = GraphicsEnvironment.getLocalGraphicsEnvironment();
         this.frame.setMaximizedBounds(env.getMaximumWindowBounds());
         this.frame.setExtendedState(this.frame.getExtendedState() | this.frame.MAXIMIZED_BOTH);
-        this.frame.setTitle("Character Trainer");
-        //this.setResizable(false);
+        
+        MainCharacter goku = new MainCharacter("Goku");
+        this.frame.setTitle("Character Trainer: Goku");
+        
+        
     }
     
     
